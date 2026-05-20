@@ -3,11 +3,12 @@ from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 import urllib.parse
 
-password = "Srouti@30052006"
+password = ""
 safe_password = urllib.parse.quote_plus(password)
 uri = f"mongodb+srv://Sagnik:{safe_password}@cluster0.5xbih08.mongodb.net/?appName=Cluster0"
 
 # Create a new client and connect to the server
+
 client = MongoClient(uri, server_api=ServerApi('1'))
 
 def connect(clent):
